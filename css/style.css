@@ -1,0 +1,111 @@
+body {
+  /* Remove user agent (browser) stylesheet styling */
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'abel', sans-serif;
+  font-size: 18px;
+  background: #bbbbbb;
+}
+
+header {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a {
+  background-color: #848484;
+  font-family: 'Abel', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  /* remove underline from links */
+  text-decoration: none;
+  text-transform: uppercase;
+  /* padding makes room on the inside of the elements  */
+  padding: 0 25px 0 25px;
+}
+
+section {
+  /* Floating elements sit next to each other on one line as far as there is room. Float: left; makes elements sit next to each other starting on the left. We can also use float: right;  */
+  float: left;
+  /* We set a width of 50% to split the screen into two columns */
+  width: 50%;
+  height: 500px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+}
+
+section div {
+  padding: 30px;
+}
+
+/* This styles up elements in html with a class of .big-image */
+.big-image {
+  /* This stretches the background images to cover the sections */
+  background-size: cover;
+}
+
+/* These add different background images to the sections with id attributes */
+#tools {
+  background-image: url('../images/photos/mac.jpg');
+}
+
+#html {
+  background-image: url('../images/photos/code.jpg');
+}
+
+#css {
+  background-image: url('../images/photos/teamwork2.jpeg');
+}
+
+div {
+  /* This moves the topic content vertically down inside the sections with text. To adjust position, increase or decrease the percentage*/
+  transform: translateY(70%);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {}
+
+form {
+  /* This fixes the floated layout and allows us to add height to the form */
+  clear: left;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+form button {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 19px;
+  background: #848484;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'abel', sans-serif;
+}
+
+textarea {
+  font-size: 16px;
+  padding: 10px
+}
+
+form button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
